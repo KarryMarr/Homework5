@@ -12,7 +12,7 @@ final class PhotoService {
         page: Int,
         camera: String
     ) async -> [Photo] {
-        let apiKey = "xqZQLRZoD2FA8lKwOGYjKsa6lXpqwQmkSUbJSt8h"
+        let apiKey = "DEMO_KEY"
         let url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=\(page)&camera=\(camera)&api_key=\(apiKey)")
         guard let url else { return [] }
         do {
